@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/repoSearchFragment">
+
+    <fragment
+        android:id="@+id/repoSearchFragment"
+        android:name="com.example.githubrepo.ui.RepoSearchFragment"
+        android:label="Search Repos"
+        tools:layout="@layout/fragment_repo_search" >
+        <action
+            android:id="@+id/action_repoSearchFragment_to_repoDetailsFragment"
+            app:destination="@id/repoDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/repoDetailsFragment"
+        android:name="com.example.githubrepo.ui.RepoDetailsFragment"
+        android:label="Repo Details"
+        tools:layout="@layout/fragment_repo_details" />
+</navigation>
